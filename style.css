@@ -1,0 +1,239 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===========================
+   Skip Link
+=========================== */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:10px;
+    background:#2563eb;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:10px;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:#1e293b;
+    color:#fff;
+    padding:20px 8%;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+header h1{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    padding:8px 14px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a:focus{
+    background:#2563eb;
+}
+
+/* ===========================
+   Main
+=========================== */
+
+main{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+    background:#fff;
+    margin-bottom:35px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+section h2{
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+/* ===========================
+   Articles (Cards)
+=========================== */
+
+article{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+article:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+article h3{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   Contact Form
+=========================== */
+
+form{
+    max-width:650px;
+    margin:auto;
+}
+
+label{
+    display:block;
+    font-weight:600;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#2563eb;
+    outline:none;
+    box-shadow:0 0 8px rgba(37,99,235,.25);
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+button:focus{
+    outline:3px solid #000;
+    outline-offset:3px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* ===========================
+   Accessibility
+=========================== */
+
+a:focus,
+input:focus,
+textarea:focus{
+    outline:3px solid #2563eb;
+    outline-offset:2px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    section{
+        padding:20px;
+    }
+
+    button{
+        width:100%;
+    }
+}
